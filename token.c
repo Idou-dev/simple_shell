@@ -37,7 +37,7 @@ char **token(char *line)
 		return (NULL);
 	}
 	tok = strtok(line, delim);
-	while(tok)
+	while (tok)
 	{
 		command[i] = _strdup(tok);
 		tok = strtok(NULL, delim);
