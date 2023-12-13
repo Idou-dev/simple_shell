@@ -28,5 +28,5 @@ int _execve(char **com, char **av)
 		free_arrstr(com);
 	}
 	n = WEXITSTATUS(status);
-	return(n);
+	return (n);
 }
