@@ -11,11 +11,14 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 
+extern char **environ;
+
 int _strlen(char *s);
 char *r_line(void);
 void d_prompt(void);
 char *_strdup(char *s);
 char **token(char *line);
 void free_arrstr(char **command);
+int _execve(char **com, char **av);
 
 #endif
