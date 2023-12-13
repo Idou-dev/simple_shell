@@ -26,6 +26,7 @@ int main(int ac, char **av)
 		command = token(line);
 		if (!command)
 			continue;
+		status = _execve(command, av);
 	}
 	return (0);
 }
